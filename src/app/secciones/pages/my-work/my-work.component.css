@@ -1,7 +1,7 @@
 .caja{
     background: linear-gradient(45deg,#1f2d40,#3c5f91,#2fb392,#418992,#50a87e,#69f0ae);
     width: 80%;
-    height: 40%;
+    height: 30%;
     border-radius: 1em;
     text-align: center;
     margin-left: 10%;   
@@ -28,6 +28,7 @@ img{
     width: 85%;
     border-radius: 1em;
     cursor: pointer;
+    object-fit: center;
 }
 
 h1{
@@ -65,7 +66,7 @@ hr{
 @media screen and (max-width:1120px){
 
     .caja{
-        height: 45%;
+        height: 100vh
     }
     .card{
         grid-template-columns: 1fr;
