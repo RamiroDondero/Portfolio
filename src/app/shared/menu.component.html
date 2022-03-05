@@ -1,0 +1,52 @@
+<mat-sidenav-container fullscreen>
+  
+  <mat-sidenav #sidenav>
+    <mat-toolbar>
+      <h1 class="side">Menu</h1>
+      <button mat-icon-button (click)="sidenav.toggle()" >
+        <mat-icon>menu</mat-icon>
+      </button>  
+    </mat-toolbar>
+    <mat-nav-list>
+      <button mat-button class="side" (click)="toSection('about')">About Me</button>
+      <button mat-button class="side" (click)="toSection('skills')">Skills</button>
+      <button mat-button class="side" (click)="toSection('work')">My Work</button>
+      <button mat-button class="side" (click)="toSection('contact')">Contact</button>
+      <hr>
+      <a mat-button color="link" href="assets/cv.pdf" download="cv.pdf" class="side">Resume</a>
+      <a target="_blank" href="https://www.linkedin.com/in/ramiro-dondero-9300ab203/">
+        <img id="ink" src="assets/linkedin2.svg" class="side" />
+      </a>
+      <a target="_blank" class="side" href="https://github.com/RamiroDondero?tab=overview&from=2021-07-01&to=2021-07-31">
+        <img class="git" src="assets/github.svg" />
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  
+  <mat-toolbar class="mat-elevation-z6">
+    <h5>PORTAFOLIO</h5>
+    <div class="example-spacer"></div>
+    <div class="hamburg">
+      <button mat-icon-button (click)="sidenav.toggle()" >
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+      <button mat-button class="menu" (click)="toSection('about')">About Me</button>
+      <button mat-button class="menu" (click)="toSection('skills')">Skills</button>
+      <button mat-button class="menu" (click)="toSection('work')">My Work</button>
+      <button mat-button class="menu" (click)="toSection('contact')">Contact</button>
+      <a mat-button color="link" href="assets/cv.pdf" download="cv.pdf" class="menu">Resume</a>
+      <a target="_blank" href="https://www.linkedin.com/in/ramiro-dondero-9300ab203/">
+        <img id="ink" src="assets/linkedin2.svg" class="menu" />
+      </a>
+      <a target="_blank" class="menu" href="https://github.com/RamiroDondero?tab=overview&from=2021-07-01&to=2021-07-31">
+        <img id="git" src="assets/github.svg" />
+      </a>
+    
+  
+  </mat-toolbar>
+
+</mat-sidenav-container>
+
+
+ 

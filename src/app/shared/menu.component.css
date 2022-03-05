@@ -1,0 +1,112 @@
+
+mat-sidenav-container{
+  background: transparent;
+}
+/*menu*/
+button,
+a {
+  font-size: large;
+  letter-spacing: 1px;
+  margin-right: 10px;
+  display: block;
+  transition: 1000ms;
+}
+img{
+  margin-left: 10%;
+  width:40px;
+   
+}
+h5{
+  margin-left: 10%;
+  letter-spacing: 4px;
+  color: #2fb392;
+  font-size: larger;
+  
+}
+
+button{
+  color: #2fb392;
+}
+button:hover {
+  color: rgb(228, 224, 220);
+}
+
+mat-sidenav{
+  width: 100%;
+}
+
+mat-sidenav mat-toolbar h1{
+  margin: 0px auto;
+  font-size: larger;
+}
+mat-sidenav mat-toolbar button{
+  position: absolute;
+  margin-left: 75%;
+}
+mat-toolbar, mat-sidenav{
+  background-color: #1f2d40;
+}
+
+
+
+mat-toolbar a:hover {
+  color:#52bda2;
+  cursor:pointer
+}
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+
+
+#git{
+  
+  padding-top: 10px;
+  width: 60px;
+  
+}
+.git{
+  width:70px;
+  margin-left: 0px;
+  margin-right: 10px;
+}
+#ink{
+  
+  padding-top: 10px;
+  width: 50px;
+  border-radius: 10px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+.hamburg{
+  display: none;
+}
+
+.side{
+  margin: 0px auto;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+
+mat-nav-list a{
+  text-align: center;
+}
+
+@media screen and (max-width:1120px){
+
+  .menu{
+    display: none;
+  }
+  .hamburg{
+    display: block;  
+  } 
+
+}
+ 
+hr{
+  width: 20%;
+  border-color: #52bda2;
+  border-radius: 50%;
+}

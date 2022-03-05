@@ -1,0 +1,83 @@
+ /*About*/
+ .about {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15%;
+  } 
+
+  h1{
+    font-size: 45px;
+    font-weight: bold;
+    background: linear-gradient(180deg,#3c5f91,#2fb392,#418992,#50a87e,#69f0ae);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 40px; 
+  }
+  
+ 
+  
+  h3{
+    font-size: 35px;
+    font-weight: bold;
+    background: linear-gradient(180deg,#3c5f91,#2fb392,#418992,#50a87e,#69f0ae);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 40px;
+    
+  }
+
+  p{
+    
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(250deg,#3c5f91,#2fb392,#418992,#50a87e,#69f0ae);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 30px;
+  }
+
+  .pres{
+    text-align: left;
+    font-style: italic;
+    
+  }
+
+  img{
+    width: 400px;
+    transition: 2000ms;
+  }
+
+  img:hover{
+    transform: scale(1.1,1.1);
+  }
+
+  #flecha{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 5%;
+    animation: follow 1s infinite alternate-reverse;
+
+  }
+  
+  @keyframes follow {
+   0%{
+    transform: translateY(45px);
+   }
+   100%{
+    transform: translateY(0px);
+   }
+  }
+
+  @media (max-width:1120px){
+
+   #flecha{
+     margin-top: 450px;
+   }
+
+ }

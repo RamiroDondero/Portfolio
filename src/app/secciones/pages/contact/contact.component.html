@@ -1,0 +1,31 @@
+<div class="caja">
+  <div class="card">
+    <div>
+      <h1>TRABAJEMOS JUNTOS</h1>
+      <hr />
+      <br>
+      <form id="contact-form" autocomplete="off">
+        <input type="hidden" name="contact_number">
+        <mat-form-field appearance='outline' >
+          <mat-label>Nombre</mat-label>
+          <input matInput required [formControl]="nombre" name="user_name">
+          <mat-error ></mat-error>
+        </mat-form-field>
+        <mat-form-field appearance='outline' >
+          <mat-label>Email</mat-label>
+          <input matInput  required type="email" [formControl]="email" placeholder="pat@example.com" name="user_email">
+          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}></mat-error>
+        </mat-form-field>
+        <mat-form-field appearance='outline' >
+          <mat-label>Tu Mensaje</mat-label>
+          <textarea matInput required name="message" ></textarea>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit" value="Send" (click)="success()" [disabled]="nombre.invalid || email.invalid">Enviar</button>
+      
+      </form>
+     
+    </div>
+    <img src="assets/contacto.svg" />
+  </div>
+</div>
+ 
