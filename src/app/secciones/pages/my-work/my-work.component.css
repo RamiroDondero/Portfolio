@@ -71,7 +71,7 @@ li{
 @media screen and (max-width:1120px){
 
     .caja{
-        height: 100vh
+        height: 120vh
     }
     .card{
         grid-template-columns: 1fr;
